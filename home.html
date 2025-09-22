@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Patrick Kocu">
+    <link rel="icon" href="assets/patrick-kocu-logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home</title>
 </head>
 <body>
-    
+    <header class="flex justify-between items-center border-b h-25">
+        <a href="#" class="hover:scale-105 transition">
+            <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15 ml-10">
+        </a>
+        <nav class="mr-10">
+            <a href="home.html" class="pr-10 text-[#0d0709ab] hover:text-[#0d0709]">Home</a>
+            <a href="aboutMe.html" class="pr-10 text-[#0d0709ab] hover:text-[#0d0709]">About Me</a>
+            <a href="contact.html" class="text-[#0d0709ab] hover:text-[#0d0709]">Contact Me</a>
+        </nav>
+    </header>
+    <main class="bg-amber-200 grid grid-cols-2">
+        <div class="border-1 ">
+            <h1 class="text-8xl">Hi! I'm Patrick</h1>
+            <p class="text-4xl">I'm a software engineering student with a huge interest in software, web, and game development.</p>
+            <a href="aboutMe.html" class="">More about me</a>
+            <a href="portfolio.html">See my work</a>
+        </div>
+        <div>
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-25">
+            <a href="cv.html">My resume</a>
+        </div>
+    </main>
 </body>
 </html>
