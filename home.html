@@ -12,16 +12,27 @@
     <title>Home</title>
 </head>
 <body class="font-[bitter] text-black bg-[#fdfbfb]">
-    <header class="flex justify-between items-center h-25 ease-in-out duration-150 sticky top-0 bg-[#fdfbfb]"> <!--nav bar-->
-        <a href="#" class="hover:scale-105 transition ml-20"> <!--Logo-->
-            <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15">
-        </a>
-        <nav class="mr-20"> <!--nav menus-->
-            <a href="home.html" class="pr-15 text-[#0d0709] underline decoration-3 decoration-amber-300">Home</a>
-            <a href="aboutMe.html" class="pr-15 text-[#0d07098f] hover:text-[#0d0709]">About Me</a>
-            <a href="contact.html" class="text-[#0d07098f] hover:text-[#0d0709]">Contact Me</a>
-        </nav>
-    </header>
+    <nav class="md:flex md:items-center md:justify-between"> <!--nav bar-->
+        <div class="flex items-center justify-between py-5 px-7">
+            <a href="#" class=""> <!--Logo-->
+                <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
+            </a>
+            <svg class="w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+            </svg>
+        </div>
+        <ul class="md:flex md:items-center md:mr-20 md:static absolute bg-[#fdfbfb] w-full h-[80%] shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] place-items-center border"> <!--nav menus-->
+            <li class="mx-8 my-5 md:my-0">
+                <a href="home.html" class="">Home</a>
+            </li>
+            <li class="mx-8 my-5 md:my-0">
+                <a href="aboutMe.html" class="">About Me</a>
+            </li>
+            <li class="mx-8 my-5 md:my-0">
+                <a href="contact.html" class="">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <main class="grid grid-cols-2 justify-between gap-8 m-20"> <!--main page-->
         <div class="content-center"> <!--description section-->
             <h1 class="text-8xl font-semibold">Hi! I'm Patrick</h1>
@@ -33,7 +44,7 @@
         </div>
         <div class="flex flex-col items-center justify-center">
             <!-- portrait -->
-            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-100 mb-4">
             
             <!-- resume link -->
             <a href="cv.html" class="hover:underline">• My Resume</a>
