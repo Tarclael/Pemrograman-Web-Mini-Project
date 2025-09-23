@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>About Me</title>
 </head>
-<body class="font-[bitter] text-[#000000] bg-[#ffffff]">
-    <header class="flex justify-between items-center h-25 ease-in-out duration-150"> <!--nav bar-->
+<body class="font-[bitter] text-black bg-[#fdfbfb]">
+    <header class="flex justify-between items-center h-25 ease-in-out duration-150 sticky top-0 bg-[#fdfbfb]"> <!--nav bar-->
         <a href="home.html" class="hover:scale-105 transition ml-20"> <!--Logo-->
             <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15">
         </a>
@@ -22,5 +22,23 @@
             <a href="contact.html" class="text-[#0d07098f] hover:text-[#0d0709]">Contact Me</a>
         </nav>
     </header>
+    <main class="grid grid-cols-2 justify-between gap-8 m-20">
+        <div class="flex flex-col items-center justify-center"> <!--potrait section-->
+            <!-- portrait -->
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-90 mb-4">
+            <div class="flex flex-row">
+                <!-- resume link -->
+                <a href="cv.html" class="hover:underline mr-5">• My Resume</a>
+                <!--projects link-->
+                <a href="portfolio.html" class="hover:underline">• My Projects</a>
+            </div>
+        </div>
+        <div class="content-center"> <!--description section-->
+            <h1 class="text-6xl font-semibold">About Me</h1>
+            <p class="text-lg font-light mt-3 indent-[4em]">My name is Patrick Kocu, a software engineering student at Satya Wacana Christian University with a lifelong passion for computers and technology. My journey into this field started with a curiosity about how software works behind the scenes, which gradually grew into a commitment to mastering the craft of building applications and solving real-world problems through code..</p>
+            <p class="text-lg font-light mt-3 indent-[4em]">My main interests include software development, web development, and game development. I enjoy working on projects that challenge me to think critically, apply new knowledge, and experiment with different approaches. In particular, I'm fascinated by how algorithms shape the behavior of programs, and I often explore ways to make code more efficient, reliable, and user-friendly.</p>
+            <p class="text-lg font-light mt-3 indent-[4em]">Beyond technical skills, I value problem-solving, creativity, and collaboration. I believe that great projects come from combining technical expertise with teamwork and innovative thinking. My current goal is to deepen my technical knowledge, sharpen my problem-solving abilities, and contribute to meaningful projects that push boundaries and create impact.</p>
+        </div>
+    </main>
 </body>
 </html>
