@@ -11,28 +11,34 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home</title>
 </head>
-<body class="font-[bitter]">
-    <header class="flex justify-between items-center border-b h-25">
-        <a href="#" class="hover:scale-105 transition">
-            <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15 ml-10">
+<body class="font-[bitter] text-[#000000] bg-[#ffffff]">
+    <header class="flex justify-between items-center h-25 ease-in-out duration-150"> <!--nav bar-->
+        <a href="#" class="hover:scale-105 transition ml-20"> <!--Logo-->
+            <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15">
         </a>
-        <nav class="mr-10">
-            <a href="home.html" class="pr-10 text-[#0d0709ab] hover:text-[#0d0709]">Home</a>
-            <a href="aboutMe.html" class="pr-10 text-[#0d0709ab] hover:text-[#0d0709]">About Me</a>
-            <a href="contact.html" class="text-[#0d0709ab] hover:text-[#0d0709]">Contact Me</a>
+        <nav class="mr-20"> <!--nav menus-->
+            <a href="home.html" class="pr-15 text-[#0d0709] underline decoration-3 decoration-amber-300">Home</a>
+            <a href="aboutMe.html" class="pr-15 text-[#0d07098f] hover:text-[#0d0709]">About Me</a>
+            <a href="contact.html" class="text-[#0d07098f] hover:text-[#0d0709]">Contact Me</a>
         </nav>
     </header>
-    <main class="bg-amber-200 grid grid-cols-2 justify-between gap-8 m-20">
-        <div class="border ">
+    <main class="grid grid-cols-2 justify-between gap-8 m-20"> <!--main page-->
+        <div class="content-center"> <!--description section-->
             <h1 class="text-8xl font-semibold">Hi! I'm Patrick</h1>
-            <p class="text-4xl font-light">I'm a software engineering student with a huge interest in software, web, and game development.</p>
-            <a href="aboutMe.html" class="">More about me</a>
-            <a href="portfolio.html">See my work</a>
+            <p class="text-4xl font-light mt-3">I'm a software engineering student with a huge interest in software, web, and game development.</p>
+            <div class="mt-8 transition">
+                <a href="aboutMe.html" class="bg-amber-200 hover:bg-amber-300 ease-in-out duration-150 p-3 mr-2">More about me</a>
+                <a href="portfolio.html" class="bg-amber-200 hover:bg-amber-300 ease-in-out duration-150 p-3">See my work</a>
+            </div>
         </div>
-        <div class="border place-content-center">
-            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-25">
-            <a href="cv.html">My resume</a>
+        <div class="flex flex-col items-center justify-center">
+            <!-- portrait -->
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
+            
+            <!-- resume link -->
+            <a href="cv.html" class="hover:underline">• My resume</a>
         </div>
+
     </main>
 </body>
 </html>
