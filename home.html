@@ -13,7 +13,7 @@
 </head>
 <body class="font-[bitter] text-black bg-[#fdfbfb]">
     <nav class="md:flex md:items-center md:justify-between"> <!--nav bar-->
-        <div class="flex items-center justify-between py-5 px-7 bg-[#fdfbfb] fixed w-full z-50 top-0">
+        <div class="flex justify-between py-5 px-7 bg-[#fdfbfb] fixed w-full z-50 top-0">
             <a href="#"> <!--Logo-->
                 <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
             </a>
@@ -30,28 +30,27 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
         </div>
-        <ul id="menu"
-            class="flex flex-col justify-center items-center gap-1 absolute bg-[#fdfbfb] w-full h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-none top-[75px] text-2xl">
-            <li class="my-2 md:my-0 w-full text-center">
-                <a href="home.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200">Home</a>
+        <ul id="menu" class="flex flex-col justify-center gap-5 absolute bg-[#fdfbfb] w-full h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-none top-[75px] text-2xl">
+            <li class="w-full text-center">
+                <a href="home.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200 underline decoration-amber-500 decoration-3">Home</a>
             </li>
-            <li class="my-2 md:my-0 w-full text-center">
+            <li class="w-full text-center">
                 <a href="aboutMe.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200">About Me</a>
             </li>
-            <li class="my-2 md:my-0 w-full text-center">
+            <li class="w-full text-center">
                 <a href="contact.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200">Contact</a>
             </li>
         </ul>
     </nav>
     <main class="pt-[75px] m-15 text-center"> <!--main page-->
-        <div class="content-center"> <!--description section-->
-            <h1 class="text-6xl font-semibold w-[300px] justify-self-center">Hi! I'm Patrick</h1>
-            <div class="flex flex-col items-center justify-center mt-5">
+        <div> <!--description section-->
+            <h1 class="text-6xl font-semibold w-[350px] justify-self-center">Hi! <br> I'm Patrick</h1>
+            <div class="flex flex-col items-center mt-5">
                 <!-- portrait -->
                 <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
                 
                 <!-- resume link -->
-                <a href="cv.html" class="hover:underline">• My Resume</a>
+                <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
             </div>
             <p class="text-2xl font-light mt-3 w-[370px] justify-self-center">I'm a software engineering student with a huge interest in software, web, and game development.</p>
             <div class="mt-8 transition flex flex-col gap-3 w-[80%] justify-self-center">
@@ -60,7 +59,6 @@
             </div>
         </div>
     </main>
-
     <script src="javascript/script.js"></script>
 </body>
 </html>
