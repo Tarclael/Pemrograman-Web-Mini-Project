@@ -12,14 +12,14 @@
     <title>Home</title>
 </head>
 <body class="font-[bitter] text-black bg-[#fdfbfb]">
-    <nav class="md:flex-row md:items-center md:justify-between"> <!--nav bar-->
-        <div class="flex justify-between py-5 px-7 md:py-7 md:px-10 bg-[#fdfbfb] fixed w-full z-50 top-0">
+    <nav class="flex flex-col md:flex-row items-center justify-between"> <!--nav bar-->
+        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#fdfbfb] md:bg-transparent fixed w-full md:w-auto md:static z-50 top-0 md:top-auto">
             <a href="#"> <!--Logo-->
                 <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
             </a>
             <div class="md:hidden">
                 <!-- Burger Icon -->
-                <svg class="w-8 cursor-pointer" id="burgerIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                <svg class="w-8 cursor-pointer block" id="burgerIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                 </svg>
@@ -33,19 +33,19 @@
         </div>
 
         <!--menus-->
-        <ul id="menu" class="flex flex-col md:flex-row justify-center gap-5 md:gap-8 absolute md:static bg-[#fdfbfb] w-full md:w-auto h-0 md:h-auto overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-none top-[75px] left-0 text-2xl">
-            <li class="w-full text-center">
-                <a href="home.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200 underline decoration-amber-500 decoration-3">Home</a>
+        <ul id="menu" class="md:flex md:h-auto justify-center gap-5 md:gap-15 absolute md:static bg-[#fdfbfb] w-full md:w-auto h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-transparent top-[75px] mx-20 text-2xl md:text-base">
+            <li class="w-full md:w-auto text-center">
+                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200 underline decoration-amber-500 decoration-3">Home</a>
             </li>
-            <li class="w-full text-center">
-                <a href="aboutMe.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200">About Me</a>
+            <li class="w-full md:w-auto text-center">
+                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">About Me</a>
             </li>
-            <li class="w-full text-center">
-                <a href="contact.html" class="block py-5 hover:bg-gray-100 active:bg-gray-200">Contact</a>
+            <li class="w-full md:w-auto text-center">
+                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">Contact</a>
             </li>
         </ul>
     </nav>
-    <main class="pt-[75px] m-15 text-center"> <!--main page-->
+    <main class="pt-[75px] m-15 text-center md:grid md:grid-cols-2 md:justify-between md:gap-8 md:m-20"> <!--main page-->
         <div> <!--description section-->
             <h1 class="text-6xl font-semibold w-[350px] justify-self-center">Hi! <br> I'm Patrick</h1>
             <div class="flex flex-col items-center mt-5">
