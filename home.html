@@ -45,21 +45,28 @@
             </li>
         </ul>
     </nav>
-    <main class="pt-[75px] m-15 text-center md:grid md:grid-cols-2 md:justify-between md:gap-8 md:m-20"> <!--main page-->
-        <div> <!--description section-->
-            <h1 class="text-6xl font-semibold w-[350px] justify-self-center">Hi! <br> I'm Patrick</h1>
-            <div class="flex flex-col items-center mt-5">
-                <!-- portrait -->
+    <main class="pt-[75px] m-15 text-center md:grid md:grid-cols-2 md:justify-between md:gap-8 md:m-20">
+        <!-- Left column -->
+        <div class="flex flex-col items-center md:items-start border">
+            <h1 class="text-6xl font-semibold w-[350px] border md:w-auto md:justify-self-start">Hi! <br> I'm Patrick</h1>
+
+            <!-- Image (mobile: comes right after h1, desktop: moves to right column) -->
+            <div class="order md:order-none md:hidden mt-5">
                 <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
-                
-                <!-- resume link -->
                 <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
             </div>
-            <p class="text-2xl font-light mt-3 w-[370px] justify-self-center">I'm a software engineering student with a huge interest in software, web, and game development.</p>
-            <div class="mt-8 transition flex flex-col gap-3 w-[80%] justify-self-center">
-                <a href="aboutMe.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full">More about me</a>
-                <a href="portfolio.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full">See my work</a>
+
+            <p class="text-2xl font-light mt-3 w-[370px] border md:w-auto">I'm a software engineering student with a huge interest in software, web, and game development.</p>
+
+            <div class="mt-8 transition flex flex-col gap-3 md:gap-5 w-[80%] border md:w-auto md:block">
+                <a href="aboutMe.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full md:rounded-none">More about me</a>
+                <a href="portfolio.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full md:rounded-none">See my work</a>
             </div>
+        </div>
+        <!-- Right column (desktop image) -->
+        <div class="hidden md:flex flex-col items-center border">
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
+            <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
         </div>
     </main>
     <script src="javascript/script.js"></script>
