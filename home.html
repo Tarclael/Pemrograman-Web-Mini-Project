@@ -11,9 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home</title>
 </head>
-<body class="font-[bitter] text-black bg-[#fdfbfb]">
+<body class="font-[bitter] bg-[#F2F2F2]">
     <nav class="flex flex-col md:flex-row items-center justify-between"> <!--nav bar-->
-        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#fdfbfb] md:bg-transparent fixed w-full md:w-auto md:static z-50 top-0 md:top-auto">
+        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#F2F2F2] md:bg-transparent fixed w-full md:w-auto md:static z-50 top-0 md:top-auto">
             <a href="#"> <!--Logo-->
                 <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
             </a>
@@ -33,40 +33,32 @@
         </div>
 
         <!--menus-->
-        <ul id="menu" class="md:flex md:h-auto justify-center gap-5 md:gap-15 absolute md:static bg-[#fdfbfb] w-full md:w-auto h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-transparent top-[75px] mx-20 text-2xl md:text-base">
-            <li class="w-full md:w-auto text-center">
-                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200 underline decoration-amber-500 decoration-3">Home</a>
+        <ul id="menu" class="md:flex md:h-auto justify-center md:gap-15 absolute md:static bg-[#fdfbfb] w-full md:w-auto h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-transparent top-[75px] mx-20 text-2xl md:text-base content-center">
+            <li class="w-full md:w-auto text-center my-2">
+                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200 underline decoration-[#ebcf00] decoration-3">Home</a>
             </li>
-            <li class="w-full md:w-auto text-center">
+            <li class="w-full md:w-auto text-center my-2">
                 <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">About Me</a>
             </li>
-            <li class="w-full md:w-auto text-center">
+            <li class="w-full md:w-auto text-center my-2">
                 <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">Contact</a>
             </li>
         </ul>
     </nav>
-    <main class="pt-[75px] m-15 text-center md:grid md:grid-cols-2 md:justify-between md:gap-8 md:m-20">
-        <!-- Left column -->
-        <div class="flex flex-col items-center md:items-start border">
-            <h1 class="text-6xl font-semibold w-[350px] border md:w-auto md:justify-self-start">Hi! <br> I'm Patrick</h1>
-
-            <!-- Image (mobile: comes right after h1, desktop: moves to right column) -->
-            <div class="order md:order-none md:hidden mt-5">
-                <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
-                <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
-            </div>
-
-            <p class="text-2xl font-light mt-3 w-[370px] border md:w-auto">I'm a software engineering student with a huge interest in software, web, and game development.</p>
-
-            <div class="mt-8 transition flex flex-col gap-3 md:gap-5 w-[80%] border md:w-auto md:block">
-                <a href="aboutMe.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full md:rounded-none">More about me</a>
-                <a href="portfolio.html" class="bg-amber-300 hover:bg-amber-400 active:bg-amber-400 ease-in-out duration-150 p-3 rounded-full md:rounded-none">See my work</a>
-            </div>
+    <main class="mt-[76px] mx-5 p-5 flex flex-col text-center items-center gap-5">
+        <div class="text-6xl font-semibold order-1 text-[#001F3F]">
+            <h1>Hi! <br> I'm Patrick</h1>
         </div>
-        <!-- Right column (desktop image) -->
-        <div class="hidden md:flex flex-col items-center border">
+        <div class="order-2 md:order-4">
             <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
             <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
+        </div>
+        <span class="order-3 md:order-2 text-2xl font-light text-[#0B1D51]">
+            <p class="">I'm a software engineering student with a huge interest in software, web, and game development.</p>
+        </span>
+        <div class="order-4 md:order-3 flex gap-3 text-[#332941]">
+            <a href="aboutMe.html" class="bg-[#ffe100] py-3 px-4 rounded-full hover:bg-[#f0d401]">More about me</a>
+            <a href="portfolio.html" class="bg-[#ffe100] py-3 px-4 rounded-full  hover:bg-[#f0d401]">See my work</a>
         </div>
     </main>
     <script src="javascript/script.js"></script>
