@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Home</title>
 </head>
-<body class="font-[bitter] bg-[#F2F2F2]">
+<body class="font-[bitter] text-[#001F3F] bg-[#F2F2F2]">
     <nav class="flex flex-col md:flex-row items-center justify-between"> <!--nav bar-->
         <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#F2F2F2] md:bg-transparent fixed w-full md:w-auto md:static z-50 top-0 md:top-auto">
             <a href="#"> <!--Logo-->
@@ -33,31 +33,38 @@
         </div>
 
         <!--menus-->
-        <ul id="menu" class="md:flex md:h-auto justify-center md:gap-15 absolute md:static bg-[#fdfbfb] w-full md:w-auto h-0 overflow-hidden transition-all duration-300 ease-in-out shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] md:shadow-transparent top-[75px] mx-20 text-2xl md:text-base content-center">
+        <ul id="menu" class="flex flex-col md:flex-row bg-[#f2f2f2] w-full overflow-hidden md:overflow-visible absolute z-50 mt-[77px] md:mt-0 h-0 md:h-auto md:transition-none md:shadow-none md:static md:text-base justify-center shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] text-2xl transition-all ease-in-out duration-300 md:gap-15 md:justify-end md:pr-15">
+            <!--Home-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200 underline decoration-[#ebcf00] decoration-3">Home</a>
+                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:active:te underline decoration-[#ebcf00] decoration-3">Home</a>
             </li>
+            <!--about me-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">About Me</a>
+                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100">About Me</a>
             </li>
+            <!--contact-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-100 active:bg-gray-200">Contact</a>
+                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100">Contact</a>
             </li>
         </ul>
     </nav>
-    <main class="mt-[76px] mx-5 p-5 flex flex-col text-center md:text-start items-center gap-5 md:grid md:grid-cols-2">
-        <div class="text-6xl font-semibold text-[#001F3F] col-start-1 row-start-1">
+    <!--main content-->
+    <main class="mt-[76px] mx-5 md:mx-15 p-5 flex flex-col text-center md:text-start items-center gap-5 md:grid md:grid-cols-2">
+        <div class="text-5xl md:text-6xl font-semibold  col-start-1 row-start-1">
             <h1>Hi! <br> I'm Patrick</h1>
         </div>
-        <div class=" col-start-2 row-span-3">
-            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 mb-4">
+        <!--potrait and resume link-->
+        <div class=" col-start-2 row-span-3 flex flex-col gap-4 justify-center items-center">
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70">
             <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
         </div>
+        <!--slight introduction-->
         <span class="text-2xl font-light text-[#0B1D51] col-start-1 row-start-2">
             <p class="">I'm a software engineering student with a huge interest in software, web, and game development.</p>
         </span>
+        <!--links to about me and portfolio-->
         <div class="flex gap-3 text-[#332941] col-start-1 row-start-3">
-            <a href="aboutMe.html" class="bg-[#ffe100] py-3 px-4 rounded-full hover:bg-[#f0d401]">More about me</a>
+            <a href="aboutMe.html" class="bg-[#ffe100] py-3 px-4 rounded-full hover:bg-[#f0d401] active:bg-[#ffe100de]">More about me</a>
             <a href="portfolio.html" class="bg-[#ffe100] py-3 px-4 rounded-full  hover:bg-[#f0d401]">See my work</a>
         </div>
     </main>
