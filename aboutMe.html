@@ -11,18 +11,45 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>About Me</title>
 </head>
-<body class="font-[bitter] text-black bg-[#fdfbfb]">
-    <header class="flex justify-between items-center h-25 ease-in-out duration-150 sticky top-0 bg-[#fdfbfb]"> <!--nav bar-->
-        <a href="home.html" class="hover:scale-105 transition ml-20"> <!--Logo-->
-            <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-15">
-        </a>
-        <nav class="mr-20"> <!--nav menus-->
-            <a href="home.html" class="pr-15 text-[#0d07098f] hover:text-[#0d0709]">Home</a>
-            <a href="aboutMe.html" class="pr-15 text-[#0d0709] underline decoration-3 decoration-amber-300">About Me</a>
-            <a href="contact.html" class="text-[#0d07098f] hover:text-[#0d0709]">Contact Me</a>
-        </nav>
-    </header>
-    <main class="grid grid-cols-2 justify-between gap-8 m-20">
+<body class="font-[bitter] text-[#001F3F] bg-[#F2F2F2]">
+    <!--nav bar-->
+    <nav class="flex flex-col md:flex-row items-center justify-between fixed top-0 left-0 w-full z-50 bg-[#F2F2F2]">
+        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:ml-10 lg:ml-15 bg-[#F2F2F2] w-full">
+            <a href="home.html"> <!--Logo-->
+                <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
+            </a>
+            <div class="md:hidden">
+                <!-- Burger Icon -->
+                <svg class="w-8 cursor-pointer block" id="burgerIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
+    
+                <!-- Close Icon -->
+                <svg class="w-8 cursor-pointer hidden" id="closeIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </div>
+        </div>
+
+        <!--menus-->
+        <ul id="menu" class="flex flex-col md:flex-row bg-[#f2f2f2] w-full overflow-hidden md:overflow-visible absolute md:static z-50 top-[75px] md:top-auto h-0 md:h-auto transition-all ease-in-out duration-300 md:transition-none md:shadow-none md:text-base justify-center shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] text-2xl md:gap-15 md:justify-end md:mr-10 lg:mr-15">
+            <!--Home-->
+            <li class="w-full md:w-auto text-center my-2">
+                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:text-[#001f3fad] md:hover:text-[#001f3f] md:active:text-[#001f3fad]">Home</a>
+            </li>
+            <!--about me-->
+            <li class="w-full md:w-auto text-center my-2">
+                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:text-[#001f3f] md:active:text-[#001f3fad] underline decoration-[#ebcf00] decoration-3">About Me</a>
+            </li>
+            <!--contact-->
+            <li class="w-full md:w-auto text-center my-2">
+                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:text-[#001f3fad] md:hover:text-[#001f3f] md:active:text-[#001f3fad]">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="grid grid-cols-2 justify-between gap-8 m-20 border mt-[77px] md:mt-[20vh]">
         <div class="flex flex-col items-center justify-center"> <!--potrait section-->
             <!-- portrait -->
             <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-90 mb-4">
@@ -40,5 +67,6 @@
             <p class="text-lg font-light mt-3 indent-[4em]">Beyond technical skills, I value problem-solving, creativity, and collaboration. I believe that great projects come from combining technical expertise with teamwork and innovative thinking. My current goal is to deepen my technical knowledge, sharpen my problem-solving abilities, and contribute to meaningful projects that push boundaries and create impact.</p>
         </div>
     </main>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
