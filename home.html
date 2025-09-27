@@ -12,8 +12,10 @@
     <title>Home</title>
 </head>
 <body class="font-[bitter] text-[#001F3F] bg-[#F2F2F2]">
-    <nav class="flex flex-col md:flex-row items-center justify-between"> <!--nav bar-->
-        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#F2F2F2] md:bg-transparent fixed w-full md:w-auto md:static z-50 top-0 md:top-auto">
+    <nav class="flex flex-col md:flex-row items-center justify-between 
+            lg:mx-15 fixed top-0 left-0 w-full z-50 bg-[#F2F2F2] md:bg-transparent">
+ <!--nav bar-->
+        <div class="flex items-center justify-between py-5 px-7 md:py-7 md:px-10 bg-[#F2F2F2] md:bg-transparent fixed top-0 left-0 w-full z-50 border">
             <a href="#"> <!--Logo-->
                 <img src="assets/patrick-kocu-logo.png" alt="patrick-kocu-logo" title="patrick-kocu-logo" class="w-10 md:w-15">
             </a>
@@ -33,37 +35,43 @@
         </div>
 
         <!--menus-->
-        <ul id="menu" class="flex flex-col md:flex-row bg-[#f2f2f2] w-full overflow-hidden md:overflow-visible absolute z-50 mt-[77px] md:mt-0 h-0 md:h-auto md:transition-none md:shadow-none md:static md:text-base justify-center shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] text-2xl transition-all ease-in-out duration-300 md:gap-15 md:justify-end md:pr-15">
+        <ul id="menu" class="flex flex-col md:flex-row bg-[#f2f2f2] w-full 
+    overflow-hidden md:overflow-visible fixed md:static 
+    z-40 top-[77px] md:top-auto h-0 md:h-auto md:transition-none 
+    md:shadow-none md:text-base justify-center 
+    shadow-[0_45px_35px_-1px_rgba(0,0,0,0.25)] text-2xl 
+    transition-all ease-in-out duration-300 md:gap-15 md:justify-end md:pr-15">
+
             <!--Home-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:active:te underline decoration-[#ebcf00] decoration-3">Home</a>
+                <a href="home.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:active:text-[#001f3f81] underline decoration-[#ebcf00] decoration-3">Home</a>
             </li>
             <!--about me-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100">About Me</a>
+                <a href="aboutMe.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:text-[#001f3fad] md:hover:text-[#001f3f] md:active:text-[#001f3fad]">About Me</a>
             </li>
             <!--contact-->
             <li class="w-full md:w-auto text-center my-2">
-                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100">Contact</a>
+                <a href="contact.html" class="block py-5 md:py-0 hover:bg-gray-200 active:bg-gray-100 md:hover:bg-transparent md:active:bg-transparent md:text-[#001f3fad] md:hover:text-[#001f3f] md:active:text-[#001f3fad]">Contact</a>
             </li>
         </ul>
     </nav>
     <!--main content-->
-    <main class="mt-[76px] mx-5 md:mx-15 p-5 flex flex-col text-center md:text-start items-center gap-5 md:grid md:grid-cols-2">
-        <div class="text-5xl md:text-6xl font-semibold  col-start-1 row-start-1">
+    <main class="mt-[76px] mx-5 md:mx-15 lg:mx-25 p-5 flex flex-col text-center md:text-start items-center gap-5 md:grid md:grid-cols-2 border">
+        <div class="text-5xl md:text-6xl lg:text-8xl font-semibold  col-start-1 row-start-1 border">
             <h1>Hi! <br> I'm Patrick</h1>
         </div>
         <!--potrait and resume link-->
-        <div class=" col-start-2 row-span-3 flex flex-col gap-4 justify-center items-center">
-            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70">
+        <div class=" col-start-2 row-span-3 flex flex-col gap-4 justify-center items-center border">
+            <img src="assets/self-potrait.jpg" alt="patrick-kocu" title="patrick-kocu" class="w-70 lg:w-150">
             <a href="cv.html" class="underline text-black/70 hover:text-black active:text-black">• My Resume</a>
         </div>
         <!--slight introduction-->
-        <span class="text-2xl font-light text-[#0B1D51] col-start-1 row-start-2">
+        <span class="text-2xl font-light text-[#0B1D51] col-start-1 row-start-2 border">
             <p class="">I'm a software engineering student with a huge interest in software, web, and game development.</p>
         </span>
         <!--links to about me and portfolio-->
-        <div class="flex gap-3 text-[#332941] col-start-1 row-start-3">
+        <div class="flex gap-3 text-[#332941] col-start-1 row-start-3 border">
             <a href="aboutMe.html" class="bg-[#ffe100] py-3 px-4 rounded-full hover:bg-[#f0d401] active:bg-[#ffe100de]">More about me</a>
             <a href="portfolio.html" class="bg-[#ffe100] py-3 px-4 rounded-full  hover:bg-[#f0d401]">See my work</a>
         </div>
