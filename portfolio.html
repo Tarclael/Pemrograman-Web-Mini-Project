@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>My Work</title>
+    <title>Portfolio</title>
 </head>
 <body class="font-[nunito] text-[#001F3F] bg-[#f2f2f2]">
     <!--nav bar-->
@@ -53,7 +53,23 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="mt-40 lg:mt-50 pb-15 mx-5 md:mx-15 lg:mx-25 border">
+
+        <!--portfolio heading-->
+        <div class="flex flex-col gap-5 lg:gap-15 border">
+            <h1 class="text-5xl font-[bitter] font-semibold">My Work</h1>
+            <p class="font-extralight text-sm font-[bitter]"><i>“Turning ideas into code, and every project into an experience of creating, learning, and improving.”</i></p>
+        </div>
+
+        <!--Projects list-->
+        <div class="border ">
+            <!--project card-->
+            <div>
+                <img src="assets/fruit_machine_mock-up.png" alt="fruit_machine" title="fruit_machine">
+                <h4>Fruit Frenzy</h4>
+                <p>Last Update: <time datetime="2025-08-17">August 17th 2025</time></p>
+            </div>
+        </div>
     </main>
     <script src="javascript/script.js"></script>
 </body>
