@@ -1,7 +1,7 @@
 # Patrick Kocu - Personal Webpage
 
 ## Project Purpose
-This project is a personal website designed to provide a comprehensive overview of who I am, showcasing my skills, portfolio projects, resume, and contact information in a clean and organized manner.  
+This project is a personal website designed to provide a comprehensive overview of who I am, showcasing my skills, portfolio projects, and resume in a clean and organized manner.  
 The website was created as a mini-project for a web programming class assignment and demonstrates my ability to build functional, visually appealing web pages using modern web development tools.
 
 ## Tools Used
