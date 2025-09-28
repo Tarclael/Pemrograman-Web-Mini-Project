@@ -11,9 +11,4 @@ The website was created as a mini-project for a web programming class assignment
 ## How to Run the Site Locally
 1. Download the ZIP file from the green **Code** button at the top of the repository.  
 2. Extract the ZIP file to a folder on your computer.  
-3. Open the `home.html` file using any preferred web browser.  
-
-## Optional (Future Improvements)
-- Add responsive contact form with backend integration  
-- Include animations or interactive portfolio sections  
-- Improve SEO and accessibility features
+3. Open the `home.html` file using any preferred web browser.
