@@ -6,7 +6,7 @@ The website was created as a mini-project for a web programming class assignment
 
 ## Tools Used
 - **Languages & Frameworks:** HTML, JavaScript, Tailwind CSS  
-- **Tools & Platforms:** VSCode, Git, Tailwind  
+- **Tools & Platforms:** VSCode, Git  
 
 ## How to Run the Site Locally
 1. Download the ZIP file from the green **Code** button at the top of the repository.  
