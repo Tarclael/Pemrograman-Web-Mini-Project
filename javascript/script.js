@@ -5,7 +5,7 @@ const menu = document.querySelector('#menu');
 // open menus
 burgerIcon.addEventListener('click', () => {
     menu.classList.remove('h-0');
-    menu.classList.add('h-[80vh]');  // expand to 80%
+    menu.classList.add('h-[80vh]');  // expand to 80hv
     burgerIcon.classList.add('hidden');
     closeIcon.classList.remove('hidden');
 });
